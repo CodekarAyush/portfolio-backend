@@ -15,7 +15,7 @@ app.use(cors())
 
 app.use('/api',mailRouter)
 
-app.get('test',(req,res)=>{
+app.get('/test',(req,res)=>{
   res.status(200).json({message:"backend running perfectly !"})
 })
 app.listen(PORT, () => {
